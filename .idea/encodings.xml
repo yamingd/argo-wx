@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
+    <file url="file://$PROJECT_DIR$/controllers/src/main/java/com/argo/wx/web/controllers/MobileWxConnectController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/controllers/src/main/java/com/argo/wx/web/controllers/MobileWxViewController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core/src/main/java/com/argo/wx/WxAccessToken.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core/src/main/java/com/argo/wx/WxApiClient.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core/src/main/java/com/argo/wx/WxMappers.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core/src/main/java/com/argo/wx/WxMenu.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core/src/main/java/com/argo/wx/handler/AbstractWxHandler.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core/src/main/java/com/argo/wx/handler/WxHandler.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core/src/main/java/com/argo/wx/handler/WxHandlerFactory.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core/src/main/java/com/argo/wx/message/WxEvent.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core/src/main/java/com/argo/wx/message/WxEventEnum.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core/src/main/java/com/argo/wx/message/WxImageMessage.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core/src/main/java/com/argo/wx/message/WxLinkMessage.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core/src/main/java/com/argo/wx/message/WxLocationEvent.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core/src/main/java/com/argo/wx/message/WxMessage.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core/src/main/java/com/argo/wx/message/WxMessageBuilder.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core/src/main/java/com/argo/wx/message/WxMessageTypeEnum.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core/src/main/java/com/argo/wx/message/WxTextMessage.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core/src/main/java/com/argo/wx/message/WxVideoMessage.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core/src/main/java/com/argo/wx/message/WxVoiceMessage.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core/src/main/java/com/argo/wx/response/WxImageResponse.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core/src/main/java/com/argo/wx/response/WxImageTextItem.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core/src/main/java/com/argo/wx/response/WxImageTextResponse.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core/src/main/java/com/argo/wx/response/WxMedia.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core/src/main/java/com/argo/wx/response/WxMusicItem.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core/src/main/java/com/argo/wx/response/WxMusicResponse.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core/src/main/java/com/argo/wx/response/WxResponse.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core/src/main/java/com/argo/wx/response/WxTextResponse.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core/src/main/java/com/argo/wx/response/WxVideoResponse.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core/src/main/java/com/argo/wx/response/WxVoiceResponse.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core/src/main/java/com/argo/wx/service/WxMenuService.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core/src/main/java/com/argo/wx/service/WxMenuTx.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core/src/main/java/com/argo/wx/service/WxUserTx.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service/src/main/java/com/argo/wx/service/impl/WxMenuServiceImpl.java" charset="UTF-8" />
+  </component>
+</project>
+
