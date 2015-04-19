@@ -9,6 +9,7 @@ public class WxAccessToken {
     private Integer expireIn;
     private String openId;
     private String scope;
+    private String jsapiTicket;
 
     public String getToken() {
         return token;
@@ -42,6 +43,14 @@ public class WxAccessToken {
         this.scope = scope;
     }
 
+    public String getJsapiTicket() {
+        return jsapiTicket;
+    }
+
+    public void setJsapiTicket(String jsapiTicket) {
+        this.jsapiTicket = jsapiTicket;
+    }
+
     @Override
     public String toString() {
         return "WxAccessToken{" +
@@ -49,6 +58,7 @@ public class WxAccessToken {
                 ", expireIn=" + expireIn +
                 ", openId='" + openId + '\'' +
                 ", scope='" + scope + '\'' +
+                ", jsapiTicket='" + jsapiTicket + '\'' +
                 '}';
     }
 }

@@ -34,6 +34,7 @@ public class WxApiClient extends BaseBean {
     private String deleteMenuUrl = "https://api.weixin.qq.com/cgi-bin/menu/delete?access_token=%s";
     private String oauth2AccessTokenUrl = "https://api.weixin.qq.com/sns/oauth2/access_token?appid=%s&secret=%s&code=%s&grant_type=authorization_code";
     private String wxViewUrl = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=%s&redirect_uri=%s&response_type=code&scope=snsapi_base&state=1#wechat_redirect";
+    private String wxJsTicketUrl = "https://api.weixin.qq.com/cgi-bin/ticket/getticket?access_token=%s&type=jsapi";
 
     private WxAccessToken accessToken;
     private int wait = 0;
@@ -176,6 +177,13 @@ public class WxApiClient extends BaseBean {
             this.accessToken.setExpireIn(d.intValue());
             logger.error("Access Token: " + this.accessToken);
             this.wait = 3600;
+
+            response = HttpClientBuilder.create().build().execute(new HttpGet(String.format(wxJsTicketUrl, this.accessToken.getToken())));
+            map = consumeResponse(response);
+            if (map.get("ticket") != null){
+                this.accessToken.setJsapiTicket(map.get("ticket") + "");
+            }
+
         }else{
             this.wait = 600;
             logger.error("Access Token Error.");
@@ -220,5 +228,13 @@ public class WxApiClient extends BaseBean {
         logger.info("HttpResponse: " + str);
         Map map = JsonUtil.asMap(str);
         return map;
+    }
+
+    public WxAccessToken getAccessToken() {
+        return accessToken;
+    }
+
+    public void setAccessToken(WxAccessToken accessToken) {
+        this.accessToken = accessToken;
     }
 }
