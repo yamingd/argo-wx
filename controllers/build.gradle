@@ -1,0 +1,12 @@
+
+description = ''
+
+jar{
+    baseName 'wx-controllers'
+}
+
+dependencies {
+  compile project(':model')
+  compile project(':service')
+  compile 'com.github.yamingd.argo:argo-web:2.0'
+}

@@ -1,0 +1,5 @@
+description = 'model'
+
+jar{
+    baseName 'wx-model'
+}

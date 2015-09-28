@@ -1,0 +1,57 @@
+allprojects {
+    group 'com.github.yamingd.argo'
+    version '2.0'
+
+    repositories {
+        mavenLocal()
+
+        maven { url 'http://maven.oschina.net/content/groups/public/' }
+
+        mavenCentral()
+    }
+
+    buildscript {
+        repositories {
+            mavenLocal()
+
+            maven { url 'http://maven.oschina.net/content/groups/public/' }
+
+            mavenCentral()
+        }
+        dependencies {
+            classpath "com.github.yamingd:argo-apt:1.2"
+        }
+    }
+}
+
+subprojects {
+
+    apply plugin: 'maven'
+    apply plugin: 'java'
+    apply plugin: 'signing'
+
+    compileJava {
+        sourceCompatibility=1.7
+        targetCompatibility=1.7
+        options.encoding='UTF-8'
+    }
+
+    compileTestJava {
+        sourceCompatibility=1.7
+        targetCompatibility=1.7
+        options.encoding='UTF-8'
+    }
+    
+    dependencies {
+        compile 'com.github.yamingd.argo:argo-util:2.0'
+        compile 'com.github.yamingd.argo:argo-db:2.1'
+        compile 'com.github.yamingd.argo:argo-service:2.0'
+        compile 'com.github.yamingd.argo:argo-security:2.0'
+        compile 'org.jsoup:jsoup:1.8.1'
+        compile 'net.glxn.qrgen:javase:2.0'
+        compile 'org.jdom:jdom2:2.0.5'
+        compile 'javax.servlet:servlet-api:2.5'
+    }
+
+
+}

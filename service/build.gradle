@@ -1,0 +1,10 @@
+
+description = 'service'
+dependencies {
+  compile project(':model')
+}
+
+
+jar{
+  baseName 'wx-service'
+}

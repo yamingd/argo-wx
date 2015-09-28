@@ -1,0 +1,6 @@
+rootProject.name = 'argo-wx'
+include ':model'
+include ':service'
+include ':controllers'
+include ':serviceImpl'
+
