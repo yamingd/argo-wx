@@ -1,6 +1,6 @@
 package com.argo.wx.service.impl;
 
-import com.argo.service.pool.AsyncTaskPool;
+import com.argo.service.common.AsyncTaskPool;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.DisposableBean;

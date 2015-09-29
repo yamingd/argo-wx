@@ -58,7 +58,7 @@ public class WxConnectController extends WxBaseController {
                 String[] a = {TOKEN,timestamp,nonce};
                 Arrays.sort(a);//数组排序
                 String str = StringUtils.join(a, "");
-                String echo = DigestUtils.shaHex(str);//SHA1加密
+                String echo = DigestUtils.sha1Hex(str);//SHA1加密
                 logger.info("server sign:{}, wx-signature:{}", echo, signature);
                 if(echo.equals(signature)){
                     response.getWriter().print(echoStr);

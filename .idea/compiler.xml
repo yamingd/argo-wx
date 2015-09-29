@@ -27,10 +27,9 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="argo-wx" target="1.5" />
-      <module name="controllers" target="1.5" />
-      <module name="core" target="1.5" />
-      <module name="service" target="1.5" />
+      <module name="argo-wx" target="1.7" />
+      <module name="controllers" target="1.7" />
+      <module name="service" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

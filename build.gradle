@@ -47,10 +47,12 @@ subprojects {
         compile 'com.github.yamingd.argo:argo-db:2.1'
         compile 'com.github.yamingd.argo:argo-service:2.0'
         compile 'com.github.yamingd.argo:argo-security:2.0'
+        compile 'org.aspectj:aspectjrt:1.8.7'
+        compile 'org.aspectj:aspectjweaver:1.8.7'
         compile 'org.jsoup:jsoup:1.8.1'
         compile 'net.glxn.qrgen:javase:2.0'
-        compile 'org.jdom:jdom2:2.0.5'
-        compile 'javax.servlet:servlet-api:2.5'
+        compile 'org.jdom:jdom2:2.0.6'
+        compile 'javax.servlet:javax.servlet-api:3.1.0'
     }
 
 

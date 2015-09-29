@@ -1,0 +1,8 @@
+printsql: true
+
+ms:
+  - name: wx
+    master:
+      - 127.0.0.1:3306/ewash
+    slave:
+      - 127.0.0.1:3306/ewash
