@@ -28,7 +28,7 @@ import java.util.Arrays;
  */
 
 @Controller
-@RequestMapping("/wx")
+@RequestMapping("/wx/")
 public class WxConnectController extends WxBaseController {
 
     @Autowired
@@ -42,7 +42,7 @@ public class WxConnectController extends WxBaseController {
     @Autowired
     private WxMenuService wxmenuService;
 
-    @RequestMapping(value="connect")
+    @RequestMapping(value="sessions")
     public void connect(HttpServletRequest request, HttpServletResponse response){
         String TOKEN = WxConfig.instance.getToken();//Token
         String signature = request.getParameter("signature");//SHA1加密字符串

@@ -2,11 +2,9 @@ package com.argo.wx.web.weixin;
 
 import com.argo.db.exception.EntityNotFoundException;
 import com.argo.security.UserIdentity;
-import com.argo.security.exception.PasswordInvalidException;
 import com.argo.security.exception.UnauthorizedException;
 import com.argo.security.service.AuthorizationService;
 import com.argo.service.ServiceException;
-import com.argo.web.JsonResponse;
 import com.argo.wx.model.WxMenu;
 import com.argo.wx.model.WxUser;
 import com.argo.wx.service.WxApiClient;
@@ -17,7 +15,8 @@ import com.argo.wx.token.WxJsSignToken;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.view.RedirectView;
 
@@ -26,7 +25,7 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  * http://jingyan.baidu.com/article/48206aeae7aa24216ad6b3f3.html
- * Created by $User on 2014-12-05 09:32.
+ * Created by yaming_deng on 2014-12-05 09:32.
  */
 
 @Controller
@@ -51,7 +50,7 @@ public class WxViewController extends WxBaseController {
     private AuthorizationService authorizationService;
 
 
-    @RequestMapping(value="to/{id}")
+    @RequestMapping(value="menus/{id}")
     public ModelAndView to(ModelAndView modelAndView, @PathVariable Integer id, HttpServletRequest request, HttpServletResponse response){
         try {
             WxMenu wxMenu = this.wxMenuService.find(null, id);
@@ -101,7 +100,7 @@ public class WxViewController extends WxBaseController {
                     } catch (UnauthorizedException e) {
 
                     }
-                    String url = "/m/wx/view";
+                    String url = "/wx/view";
                     if (null != request.getQueryString()){
                         url = url + "?" + request.getQueryString();
                     }
@@ -124,44 +123,6 @@ public class WxViewController extends WxBaseController {
             }
         }
         return modelAndView;
-    }
-
-    @RequestMapping(value="bind", method= RequestMethod.POST)
-    @ResponseBody
-    public JsonResponse bind(ModelAndView modelAndView,
-                             @RequestParam(value = "name", defaultValue = "") String uname,
-                             @RequestParam(value = "passwd", defaultValue = "") String passwd,
-                             @RequestParam(value="openid", defaultValue = "") String openid,
-                             @RequestParam(value="opentoken", defaultValue = "") String opentoken,
-                             @RequestParam(value="to", defaultValue = "") String to,
-                             HttpServletRequest request, HttpServletResponse response,
-                             JsonResponse actResponse){
-
-        UserIdentity item = null;
-        try {
-            item = authorizationService.verifyUserPassword(uname, passwd);
-        } catch (PasswordInvalidException e) {
-            logger.error(e.getMessage(), e);
-            actResponse.setCode(e.getStatusCode());
-            return actResponse;
-        }
-
-        WxAccessToken wxAccessToken = new WxAccessToken();
-        wxAccessToken.setOpenId(openid);
-        wxAccessToken.setToken(opentoken);
-
-        //写登录Cookie
-        this.rememberUser(request, response, item.getIdentityId());
-        request.setAttribute("currentUser", item);
-
-        try {
-            postBind(item, wxAccessToken);
-        } catch (ServiceException e) {
-            logger.error(e.getMessage(), e);
-            actResponse.setCode(e.getErrorCode());
-        }
-
-        return actResponse;
     }
 
     private void postBind(UserIdentity item, WxAccessToken wxAccessToken) throws ServiceException {
