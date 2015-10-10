@@ -10,3 +10,7 @@ dependencies {
   compile project(':wx-service')
   compile 'com.github.yamingd.argo:argo-web:2.0'
 }
+
+ext {
+    uploadArchive=true
+}

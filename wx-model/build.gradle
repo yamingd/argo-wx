@@ -3,3 +3,7 @@ description = 'model'
 jar{
     baseName 'wx-model'
 }
+
+ext {
+    uploadArchive=true
+}

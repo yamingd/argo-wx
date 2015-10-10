@@ -5,3 +5,7 @@ dependencies {
     compile project(':wx-model')
     compile 'junit:junit:4.11'
 }
+
+ext {
+    uploadArchive=false
+}

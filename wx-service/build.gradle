@@ -8,3 +8,7 @@ dependencies {
 jar{
   baseName 'wx-service'
 }
+
+ext {
+  uploadArchive=true
+}
