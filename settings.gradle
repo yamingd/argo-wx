@@ -1,7 +1,7 @@
 rootProject.name = 'argo-wx'
-include 'model'
-include 'service'
-include 'controllers'
-include 'serviceImpl'
+include 'wx-model'
+include 'wx-service'
+include 'wx-controllers'
+include 'wx-serviceImpl'
 include 'testcase'
 

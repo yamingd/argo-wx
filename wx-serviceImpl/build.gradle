@@ -1,8 +1,8 @@
 
 description = 'serviceImpl'
 dependencies {
-    compile project(':model')
-    compile project(':service')
+    compile project(':wx-model')
+    compile project(':wx-service')
     compile 'org.apache.httpcomponents:httpclient:4.5.1'
 }
 

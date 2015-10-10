@@ -1,7 +1,7 @@
 
 dependencies {
-    compile project(':serviceImpl')
-    compile project(':service')
-    compile project(':model')
+    compile project(':wx-serviceImpl')
+    compile project(':wx-service')
+    compile project(':wx-model')
     compile 'junit:junit:4.11'
 }
