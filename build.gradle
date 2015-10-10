@@ -1,6 +1,4 @@
 allprojects {
-    group 'com.github.yamingd.argo'
-    version '2.0'
 
     repositories {
         mavenLocal()
@@ -29,6 +27,9 @@ subprojects {
     apply plugin: 'maven'
     apply plugin: 'java'
     apply plugin: 'signing'
+
+    group 'com.github.yamingd.argo'
+    version '2.0.0'
 
     compileJava {
         sourceCompatibility=1.7
