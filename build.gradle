@@ -29,7 +29,7 @@ subprojects {
     apply plugin: 'signing'
 
     group 'com.github.yamingd.argo'
-    version '2.0.0'
+    version '2.1.0'
 
     compileJava {
         sourceCompatibility=1.7
@@ -47,7 +47,7 @@ subprojects {
         compile 'com.github.yamingd.argo:argo-util:2.0'
         compile 'com.github.yamingd.argo:argo-db:2.1'
         compile 'com.github.yamingd.argo:argo-service:2.0'
-        compile 'com.github.yamingd.argo:argo-security:2.1'
+        compile 'com.github.yamingd.argo:argo-security:2.2.1'
         compile 'org.aspectj:aspectjrt:1.8.7'
         compile 'org.aspectj:aspectjweaver:1.8.7'
         compile 'org.jsoup:jsoup:1.8.1'
