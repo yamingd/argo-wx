@@ -161,6 +161,19 @@ public class WxUserMapperImpl extends MySqlMapper<WxUser, Integer> implements Wx
     }
 
     @Override
+    public Integer[] toPKArrays(String pkWithCommas) {
+        if (null == pkWithCommas){
+            return null;
+        }
+        String[] tmp = pkWithCommas.split(",");
+        Integer[] vals = new Integer[tmp.length];
+        for (int i = 0; i < tmp.length; i++) {
+            vals[i] = Integer.valueOf(tmp[i]);
+        }
+        return vals;
+    }
+
+    @Override
     public List<WxUser> selectRows(TableContext context, final List<Integer> args, final boolean ascending) throws DataAccessException{
         Preconditions.checkNotNull(args);
         return super.selectRows(context, args.toArray(new Integer[0]), ascending);
