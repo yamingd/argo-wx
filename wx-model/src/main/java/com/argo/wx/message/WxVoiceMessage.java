@@ -8,11 +8,6 @@ import org.jdom2.Element;
  */
 public class WxVoiceMessage extends WxMessage {
 
-    /**
-     * <MediaId><![CDATA[media_id]]></MediaId>
-     <Format><![CDATA[Format]]></Format>
-     */
-
     private String mediaId;
     private String format;
 

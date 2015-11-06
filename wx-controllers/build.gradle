@@ -8,7 +8,7 @@ jar{
 dependencies {
   compile project(':wx-model')
   compile project(':wx-service')
-  compile 'com.github.yamingd.argo:argo-web:2.0'
+  compile 'com.github.yamingd.argo:argo-web:2.3.0'
 }
 
 ext {

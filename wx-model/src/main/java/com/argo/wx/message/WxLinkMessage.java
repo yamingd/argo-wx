@@ -8,12 +8,6 @@ import org.jdom2.Element;
  */
 public class WxLinkMessage extends WxMessage {
 
-    /**
-     * <Title><![CDATA[公众平台官网链接]]></Title>
-     <Description><![CDATA[公众平台官网链接]]></Description>
-     <Url><![CDATA[url]]></Url>
-     */
-
     private String title;
     private String description;
     private String url;

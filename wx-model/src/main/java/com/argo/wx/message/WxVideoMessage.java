@@ -8,11 +8,6 @@ import org.jdom2.Element;
  */
 public class WxVideoMessage extends WxMessage {
 
-    /*
-    <MediaId><![CDATA[media_id]]></MediaId>
-<ThumbMediaId><![CDATA[thumb_media_id]]></ThumbMediaId>
-     */
-
     private String mediaId;
     private String thumbMediaId;
 

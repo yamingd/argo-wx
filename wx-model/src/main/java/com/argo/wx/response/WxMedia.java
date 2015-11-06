@@ -8,12 +8,6 @@ import org.jdom2.Element;
  */
 public class WxMedia {
 
-    /*
-    <MediaId><![CDATA[media_id]]></MediaId>
-    <Title><![CDATA[title]]></Title>
-    <Description><![CDATA[description]]></Description>
-     */
-
     private String mediaId;
     private String title;
     private String description;

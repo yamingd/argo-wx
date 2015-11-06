@@ -8,11 +8,6 @@ import org.jdom2.Element;
  */
 public class WxImageMessage extends WxMessage {
 
-    /**
-     * <PicUrl><![CDATA[this is a url]]></PicUrl>
-     <MediaId><![CDATA[media_id]]></MediaId>
-     */
-
     private String picUrl;
     private String mediaId;
 

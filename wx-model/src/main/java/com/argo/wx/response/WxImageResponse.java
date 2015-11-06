@@ -7,18 +7,6 @@ import org.jdom2.Document;
  */
 public class WxImageResponse extends WxResponse {
 
-    /*
-    <xml>
-    <ToUserName><![CDATA[toUser]]></ToUserName>
-    <FromUserName><![CDATA[fromUser]]></FromUserName>
-    <CreateTime>12345678</CreateTime>
-    <MsgType><![CDATA[image]]></MsgType>
-    <Image>
-    <MediaId><![CDATA[media_id]]></MediaId>
-    </Image>
-    </xml>
-     */
-
     private WxMedia image;
 
     public WxImageResponse(WxMedia image) {

@@ -5,11 +5,11 @@ package com.argo.wx.message;
  */
 public interface WxMessageTypeEnum {
 
-    final String Text = "text";
-    final String Image = "image";
-    final String Voice = "voice";
-    final String Video = "video";
-    final String Location = "location";
-    final String Link = "link";
-    final String Event = "event";
+    String Text = "text";
+    String Image = "image";
+    String Voice = "voice";
+    String Video = "video";
+    String Location = "location";
+    String Link = "link";
+    String Event = "event";
 }

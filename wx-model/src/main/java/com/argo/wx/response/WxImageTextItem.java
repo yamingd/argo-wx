@@ -8,15 +8,6 @@ import org.jdom2.Element;
  */
 public class WxImageTextItem {
 
-    /*
-    <item>
-    <Title><![CDATA[title]]></Title>
-    <Description><![CDATA[description]]></Description>
-    <PicUrl><![CDATA[picurl]]></PicUrl>
-    <Url><![CDATA[url]]></Url>
-    </item>
-     */
-
     private String title;
     private String description;
     /**

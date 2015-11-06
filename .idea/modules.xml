@@ -4,10 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/argo-wx.iml" filepath="$PROJECT_DIR$/argo-wx.iml" />
       <module fileurl="file://$PROJECT_DIR$/testcase/testcase.iml" filepath="$PROJECT_DIR$/testcase/testcase.iml" />
-      <module fileurl="file://$PROJECT_DIR$/wx.iml" filepath="$PROJECT_DIR$/wx.iml" />
-      <module fileurl="file://$PROJECT_DIR$/wx-controllers/controllers.iml" filepath="$PROJECT_DIR$/wx-controllers/controllers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wx-controllers/wx-controllers.iml" filepath="$PROJECT_DIR$/wx-controllers/wx-controllers.iml" />
       <module fileurl="file://$PROJECT_DIR$/wx-model/wx-model.iml" filepath="$PROJECT_DIR$/wx-model/wx-model.iml" />
-      <module fileurl="file://$PROJECT_DIR$/wx-service/service.iml" filepath="$PROJECT_DIR$/wx-service/service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wx-service/wx-service.iml" filepath="$PROJECT_DIR$/wx-service/wx-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/wx-serviceImpl/wx-serviceImpl.iml" filepath="$PROJECT_DIR$/wx-serviceImpl/wx-serviceImpl.iml" />
     </modules>
   </component>

@@ -7,20 +7,6 @@ import org.jdom2.Document;
  */
 public class WxVideoResponse extends WxResponse {
 
-    /*
-    <xml>
-    <ToUserName><![CDATA[toUser]]></ToUserName>
-    <FromUserName><![CDATA[fromUser]]></FromUserName>
-    <CreateTime>12345678</CreateTime>
-    <MsgType><![CDATA[video]]></MsgType>
-    <Video>
-    <MediaId><![CDATA[media_id]]></MediaId>
-    <Title><![CDATA[title]]></Title>
-    <Description><![CDATA[description]]></Description>
-    </Video>
-    </xml>
-     */
-
     private WxMedia video;
 
     public WxVideoResponse(WxMedia video) {

@@ -5,13 +5,6 @@ import org.jdom2.Element;
 
 /**
  * http://mp.weixin.qq.com/wiki/2/5baf56ce4947d35003b86a9805634b1e.html
- * <xml>
-     <ToUserName><![CDATA[toUser]]></ToUserName>
-     <FromUserName><![CDATA[FromUser]]></FromUserName>
-     <CreateTime>123456789</CreateTime>
-     <MsgType><![CDATA[event]]></MsgType>
-     <Event><![CDATA[subscribe]]></Event>
-   </xml>
  * Created by Yaming on 2014/12/17.
  */
 public class WxEvent extends WxMessage {

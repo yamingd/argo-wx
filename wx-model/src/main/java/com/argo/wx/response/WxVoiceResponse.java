@@ -7,18 +7,6 @@ import org.jdom2.Document;
  */
 public class WxVoiceResponse extends WxResponse {
 
-    /*
-    <xml>
-    <ToUserName><![CDATA[toUser]]></ToUserName>
-    <FromUserName><![CDATA[fromUser]]></FromUserName>
-    <CreateTime>12345678</CreateTime>
-    <MsgType><![CDATA[voice]]></MsgType>
-    <Voice>
-    <MediaId><![CDATA[media_id]]></MediaId>
-    </Voice>
-    </xml>
-     */
-
     private WxMedia voice;
 
     public WxVoiceResponse(WxMedia voice) {

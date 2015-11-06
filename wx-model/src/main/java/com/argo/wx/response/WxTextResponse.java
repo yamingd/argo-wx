@@ -9,16 +9,6 @@ import org.jdom2.Element;
  */
 public class WxTextResponse extends WxResponse {
 
-    /*
-    <xml>
-    <ToUserName><![CDATA[toUser]]></ToUserName>
-    <FromUserName><![CDATA[fromUser]]></FromUserName>
-    <CreateTime>12345678</CreateTime>
-    <MsgType><![CDATA[text]]></MsgType>
-    <Content><![CDATA[你好]]></Content>
-    </xml>
-     */
-
     private String content;
 
     public WxTextResponse(String content) {

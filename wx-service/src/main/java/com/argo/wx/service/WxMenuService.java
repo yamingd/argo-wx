@@ -12,14 +12,14 @@ import java.util.List;
 public interface WxMenuService extends WxServiceBase<WxMenu, Integer> {
     /**
      * 读取子菜单列表
-     * @param parentId
-     * @return
+     * @param parentId 一级菜单id
+     * @return List
      */
     List<WxMenu> findByParent(int parentId);
 
     /**
      * 推送更新到微信
-     * @return
+     * @return boolean
      */
     boolean pushToWx();
 }

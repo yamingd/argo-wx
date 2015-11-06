@@ -10,23 +10,23 @@ import java.io.IOException;
 public class WxConfig {
 
     /**
-     *
+     * 网站域名
      */
     private String appdomain;
     /**
-     *
+     * 应用
      */
     private String token;
     /**
-     *
+     * 应用标示,在wx公众平台注册得到
      */
     private String appId;
     /**
-     *
+     * 应用加密私钥,在wx公众平台注册得到
      */
     private String secret;
     /**
-     *
+     * 是否启用
      */
     private boolean enabled;
 
@@ -93,7 +93,7 @@ public class WxConfig {
 
     /**
      * 加载配置信息
-     * @throws IOException
+     * @throws IOException 抛出文件异常
      */
     public static WxConfig load(String confName) throws IOException {
         WxConfig config = YamlTemplate.load(WxConfig.class, confName);
